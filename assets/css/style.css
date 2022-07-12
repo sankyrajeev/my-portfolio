@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.header{
+    background-color:#32343D ;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    
+    
+}
+
+
+.page-title{
+    background-color: #92CCCD;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: #32343D;
+    margin-right: 70%;
+    margin-left: -15px;
+    padding-right: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: end;
+   
+    
+    /* height: 100px; */
+}
