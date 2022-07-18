@@ -78,6 +78,21 @@ a {
 
 }
 
+.about img{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-shrink:initial; */
+    width: 800px;
+    height: 600px;
+    align-items: start;
+    object-fit: cover;
+    /* margin-top: -14.75%; */
+    border: 5px solid #92CCCD;
+    margin-top: -70px;
+    margin-left: 470px;
+
+}
+
 .about .vl {
     border-left: 6px solid #445877;
     margin-top: -5%;
