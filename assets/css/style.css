@@ -78,17 +78,49 @@ a {
 
 }
 
-.vl {
+.about .vl {
     border-left: 6px solid #445877;
-    height: 400px;
+    margin-top: -5%;
+    height: 200px;
     margin-left: 24%;
+    
   }
 
 .about {
-    color: #445877 ;
+    /* color: #445877 ;
     display: flex;
     margin-top:-20%;
     margin-left: 12%;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+
+    /* width: 75%; */
+    display: inline-block;
+    
+    color: #445877;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
+.about p{
+    /* /* width: fit-content;
+    width: -moz-fit-content; */
+    margin-left: 30%;
+    padding-left: 0px;
+    font-size: x-large;
+    margin-top: -2.5%;
+    /* object-fit: cover; */
+    /* display: inline-block; */
+    
+}
+
+h2 ,h3{
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 40px;
+}
+
+/* h3{
+    margin-left: 15%;
+} */
