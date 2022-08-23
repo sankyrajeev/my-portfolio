@@ -1,304 +1,269 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    
+  box-sizing: border-box;
 }
 
+/* brand color palette */
 :root {
   --primary: rgba(68, 88, 119, 1);
   --secondary: rgba(146, 204, 206, 1);
+  --tertiary: rgba(49, 52, 61, 1);
+  --dark: rgba(28, 29, 33, 1);
+  --light: rgba(238, 238, 247, 1);
 }
 
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #32343D;
-    color: #32343D;
-
-    
-    
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--primary);
+  background-color: var(--light);
+  line-height: 1.5;
 }
 
-.header h1 {
-    
-    display: inline-block;
-    font-size: 48px;
-    background-color: #92CCCD;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 100px;
-    padding-right: 15px;
-    margin-left: -20px;
-   
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
-.header nav,.contact nav {
-    padding-top: 20px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+p {
+  margin: 0;
 }
 
-.contact nav{
-    margin-right: 10%;
-    margin-bottom: -100%;
+header {
+  padding: 15px 6% 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--tertiary);
+  box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
 }
 
-.header nav ul ,.contact nav ul{
-    list-style-type: none;
+header h1 {
+  color: var(--tertiary);
+  background-color: var(--secondary);
+  padding: 5px 1% 5px 6%;
+  margin: 0;
+  font-size: 4vw;
+  line-height: 1;
 }
 
-.header nav ul li ,.contact nav ul li{
-    display: inline-block;
-    margin-left: 25px;
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.contact nav ul li{
-    display: inline-block;
-    margin-left: 250px;
-    
+nav a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: var(--secondary);
+  margin-right: 10px;
+  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  font-size: 1.4rem;
 }
+
 nav a:hover {
-    background-size: 100% 100%;
-    color:#445877
-  }
-
-a {
-    color: #92CCCD;
-    text-decoration-line: underline;
-}
-#cover img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-
+  background-size: 100% 100%;
+  color: var(--primary);
 }
 
-.quote{
-    font-size: x-large;
-    color:aliceblue;
-    margin-left: 65%;
-    margin-top: -5%;
-    font-weight: bolder;
-    font-style: italic;
-
-}
-.me img{
-    display: flex;
-    /* flex-wrap: wrap; */
-    /* flex-shrink:initial; */
-    width: 400px;
-    height: 300px;
-    align-items: start;
-    object-fit: cover;
-    /* margin-top: -14.75%; */
-    margin-top: -247px;
-
+nav a:last-child {
+  margin-right: 0;
 }
 
-
-
-
-
-/* .about  .vl {
-    flex: wrap;
-    border-left: 6px solid #445877;
-    margin-top: -5%;
-    height: 150px;
-    margin-left: 24%;
-    
-  } */
-
-
-
-/* .about  {
-   
-    display: inline-block;
-    
-    color: #445877;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-} */
-
-
-
-
-/* .about p{
-    /* /* width: fit-content;
-    width: -moz-fit-content; */
-    /* margin-left: 30%;
-    padding-left: 0px;
-    font-size: x-large;
-    margin-top: -2.5%;
-    object-fit: cover;
-    display: inline-block;
-    
-} */ 
-
-h2 ,h3 ,h4{
-    margin-left: 10%;
-    margin-top: 5%;
-    font-size: 40px;
+main {
+  margin-top: 20px;
+  margin-bottom: 45px;
 }
 
+.hero-banner {
+  background: rgb(68, 88, 120);
+  background-image: url("images/blue-facebook-cover-preview-1.jpeg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 30vh;
+  color: var(--light);
+  padding: 2% 6%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
 
-.mywork,.about {
-    display: flex;
-    margin: 25px ;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    /* justify-content: space-between; */
-  }
+.hero-banner div {
+  flex: 0 0 90%;
+}
 
-  #service1 h2{
-    flex: 0 0 20%;
-    text-align: right;
-    padding-right: 15px;
-    border-right: 4px solid;
-    color: #445877;
-    font-size: 3.8vw;
-    line-height: 1.2;
-  }
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.hero-banner h2 {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  display: inline;
+}
 
-    .a:first-child {
-    min-height: 420px;
+.page-wrapper {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.page-section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 4px solid var(--primary);
+  font-size: 4vw;
+  line-height: 1.1;
+}
+
+.page-section > div {
+  flex: 0 0 77%;
+}
+
+.page-section p {
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  border: 5px solid var(--secondary);
+  background-color: var(--primary);
+  color: var(--tertiary);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+/* feature first portfolio item */
+.flex-item:first-child {
+    min-height: 400px;
     flex-basis: 100%;
 }
 
-    .a:hover {
-  background-color:#32343D
+.flex-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-    .a {
-  background-color:#92CCCD;
-  padding: 10px 10px;
+.flex-item div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
 }
 
-    .a{
+.flex-item h3 {
   font-size: 1.6rem;
 }
-  .a{
-    border: 5px solid #445877;
-    background-color:#445877;
-    color:#32343D;
-    min-height: 130px;
-    max-height: 130px;
-    flex-basis: calc(50% - 1em);  /*didnt understand this. I took help from slackbot team. Please do explain how this works */
-    display: flex;
-    align-items: flex-end;
-    padding: 0 0 18px 0;
-    margin: 0.4em;
-    background-size: 150%;
-    font-size: 1.2rem;
 
+.contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.contact address a {
+  color: var(--tertiary);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-style: normal;
+  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  margin: 0 0.2rem 0.1rem;
+  display: inline-block;
+}
+
+.contact address a:hover {
+  background-size: 100% 88%;
+  color: var(--secondary);
+}
+
+
+
+
+.led{
+  background-image: url("../images/2901.jpg");
+}
+
+.fitness {
+  background-image: url("/Users/sankarsh/my-new-code-folder/my-portfolio/assets/images/Snapwire-Running-17-38ab6267e82c41a0b03b66469087aefb.jpeg");
+}
+
+.calc {
+  background-image: url(" /Users/sankarsh/my-new-code-folder/my-portfolio/assets/images/accountant-calculating-profit-with-financial-analysis-graphs.jpeg");
+}
+
+.resume {
+  background-image: url("/Users/sankarsh/my-new-code-folder/my-portfolio/assets/images/xx.png");
+}
+
+
+
+@media screen and (max-width: 980px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
   }
 
-  h2,h3{
-    margin:0;
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
   }
 
-  .mywork > h2 {
-    flex: 0 0 20%;
-    text-align: right;
-    padding-right: 15px;
-    
-    font-size: 4vw;
-    line-height: 1.1;
-  }
-
-  .about > h2 {
-    flex: 0 0 20%;
-    text-align: right;
-    padding-right: 15px;
-    border-right: 4px solid #445877;
-    font-size: 4vw;
-    line-height: 1.1;
-    color: #445877;
-  }
-
-  .about p{
-    margin-bottom: 20px;
-    color: #445877;
-    font-size: x-large;
-  }
-
-  .mywork > div , .about > div {
-    flex: 0 0 75%;
-  }
-
-  
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
+  header nav {
     justify-content: center;
   }
 
-  .mywork , .about {
-    margin: 25px 0;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-between;
+  .page-section > h2,
+  .page-section > div {
+    flex: 0 0 100%;
   }
 
-  .contact address {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-  }
-
-  .contact address a {
-    color:#32343D;
-    padding: 5px;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-style: normal;
-    background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: bottom;
-    transition: all 0.25s ease-in;
-    margin: 0 0.2rem 0.1rem;
-    display: inline-block;
-  }
-
-  .contact address a:hover {
-    background-size: 100% 88%;
-    color:#445877;
-  }
-
-  .picture-1 {
-    background-image: url("/Users/sankarsh/my-new-code-folder/my-portfolio/assets/images/xx.png");
-  }
-
-  .picture-2 {
-    background-image: url("/Users/sankarsh/my-new-code-folder/my-portfolio/assets/images/accountant-calculating-profit-with-financial-analysis-graphs.jpeg");
-  }
-
-  .picture-3 {
-    background-image: url("/Users/sankarsh/my-new-code-folder/my-portfolio/assets/images/2901.jpg");
-  }
-
-  .picture-4 {
-    background-image: url("/Users/sankarsh/my-new-code-folder/my-portfolio/assets/images/Snapwire-Running-17-38ab6267e82c41a0b03b66469087aefb.jpeg");
-  }
-
-  .mywork > h2 {
+  .page-section > h2 {
     border-right: none;
     border-bottom: 4px solid var(--primary);
     margin-bottom: 20px;
@@ -306,17 +271,25 @@ h2 ,h3 ,h4{
     text-align: left;
     font-size: 7vw;
   }
+}
 
-  
+@media screen and (max-width: 768px) {
+  .flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%;
+  }
 
+  .flex-item:first-child {
+    min-height: 150px;
+  }
 
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
 
-
-
-
-
-
-
-
-
-  
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
