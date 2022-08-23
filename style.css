@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-/* brand color palette */
+
 :root {
   --primary: rgba(68, 88, 119, 1);
   --secondary: rgba(146, 204, 206, 1);
@@ -88,7 +88,7 @@ main {
 
 .hero-banner {
   background: rgb(68, 88, 120);
-  background-image: url("/Users/sankarsh/my-new-code-folder/my-portfolio/assets/images/blue-facebook-cover-preview-1.jpeg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-image: url("assets/images/cover.jpeg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
@@ -116,7 +116,7 @@ main {
   color: var(--tertiary);
   margin: 0;
   padding: 5px 10px;
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   line-height: 1.2;
   display: inline;
 }
@@ -142,7 +142,7 @@ main {
   text-align: right;
   padding-right: 15px;
   border-right: 4px solid var(--primary);
-  font-size: 4vw;
+  font-size: 3vw;
   line-height: 1.1;
 }
 
@@ -226,27 +226,29 @@ main {
 }
 
 
-
+.newsounds{
+  background-image: url("assets/images/sound.jpeg");
+}
 
 .led{
-  background-image: url("../images/2901.jpg");
+  background-image: url("assets/images/2901.jpg");
 }
 
 .fitness {
-  background-image: url("/Users/sankarsh/my-new-code-folder/my-portfolio/assets/images/Snapwire-Running-17-38ab6267e82c41a0b03b66469087aefb.jpeg");
+  background-image: url("assets/images/fitness.jpeg");
 }
 
 .calc {
-  background-image: url(" /Users/sankarsh/my-new-code-folder/my-portfolio/assets/images/accountant-calculating-profit-with-financial-analysis-graphs.jpeg");
+  background-image: url("assets/images/calculator.jpeg");
 }
 
 .resume {
-  background-image: url("/Users/sankarsh/my-new-code-folder/my-portfolio/assets/images/xx.png");
+  background-image: url("assets/images/xx.png");
 }
 
 
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 980px) {x
   header {
     padding: 0 0 10px 0;
     justify-content: center;
