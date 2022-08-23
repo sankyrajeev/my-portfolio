@@ -88,7 +88,7 @@ main {
 
 .hero-banner {
   background: rgb(68, 88, 120);
-  background-image: url("images/blue-facebook-cover-preview-1.jpeg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-image: url("/Users/sankarsh/my-new-code-folder/my-portfolio/assets/images/blue-facebook-cover-preview-1.jpeg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
@@ -99,6 +99,12 @@ main {
   justify-content: flex-end;
   align-items: flex-end;
   text-align: right;
+}
+.image{
+  /* background-size: auto; */
+  margin-left: 15%;
+  align-items: center;
+
 }
 
 .hero-banner div {
