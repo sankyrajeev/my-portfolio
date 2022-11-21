@@ -27,6 +27,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  border-radius: 0px 10px 10px 0px;
 }
 
 p {
@@ -94,7 +95,7 @@ main {
   background-blend-mode: soft-light;
   min-height: 30vh;
   color: var(--light);
-  padding: 2% 6%;
+  padding: 2% 12%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -102,8 +103,10 @@ main {
 }
 .image{
   /* background-size: auto; */
-  margin-left: 15%;
+  width: auto;
+  margin-left: 10px;
   align-items: center;
+  border-radius: 10px 50px 10px 50px;
 
 }
 
@@ -119,6 +122,7 @@ main {
   font-size: 2.1rem;
   line-height: 1.2;
   display: inline;
+  border-radius: 20px 20px 20px 20px;
 }
 
 .page-wrapper {
@@ -227,23 +231,37 @@ main {
 
 
 .newsounds{
-  background-image: url("assets/images/sound.jpeg");
+  background-image: url("assets/images/original-8ab507a3339bde18636afdb7d9d68235.webp");
+  border-radius: 20px 20px 20px 20px;
+  max-width: 50%;
+  width: 10%;
 }
 
 .led{
   background-image: url("assets/images/2901.jpg");
+  border-radius: 20px 20px 20px 20px;
 }
 
 .fitness {
   background-image: url("assets/images/fitness.jpeg");
+  border-radius: 20px 20px 20px 20px;
+  
 }
 
 .calc {
   background-image: url("assets/images/calculator.jpeg");
+  border-radius: 20px 20px 20px 20px;
 }
 
 .resume {
   background-image: url("assets/images/xx.png");
+  border-radius: 20px 20px 20px 20px;
+}
+
+.myimage{
+  width: auto;
+  margin-left: 12em;
+  padding-left: 2em;
 }
 
 
