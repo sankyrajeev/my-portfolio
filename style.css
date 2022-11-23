@@ -101,9 +101,10 @@ main {
   align-items: flex-end;
   text-align: right;
 }
-.image{
+
+.image {
   /* background-size: auto; */
-  width: auto;
+  /* width: auto; */
   margin-left: 10px;
   align-items: center;
   border-radius: 10px 50px 10px 50px;
@@ -141,7 +142,7 @@ main {
   justify-content: space-between;
 }
 
-.page-section > h2 {
+.page-section>h2 {
   flex: 0 0 20%;
   text-align: right;
   padding-right: 15px;
@@ -150,7 +151,7 @@ main {
   line-height: 1.1;
 }
 
-.page-section > div {
+.page-section>div {
   flex: 0 0 77%;
 }
 
@@ -184,8 +185,8 @@ main {
 
 /* feature first portfolio item */
 .flex-item:first-child {
-    min-height: 400px;
-    flex-basis: 100%;
+  min-height: 400px;
+  flex-basis: 100%;
 }
 
 .flex-item:hover {
@@ -230,14 +231,14 @@ main {
 }
 
 
-.newsounds{
+.newsounds {
   background-image: url("assets/images/original-8ab507a3339bde18636afdb7d9d68235.webp");
   border-radius: 20px 20px 20px 20px;
-  max-width: 50%;
-  width: 10%;
+
+
 }
 
-.led{
+.led {
   background-image: url("assets/images/2901.jpg");
   border-radius: 20px 20px 20px 20px;
 }
@@ -245,7 +246,7 @@ main {
 .fitness {
   background-image: url("assets/images/fitness.jpeg");
   border-radius: 20px 20px 20px 20px;
-  
+
 }
 
 .calc {
@@ -258,16 +259,21 @@ main {
   border-radius: 20px 20px 20px 20px;
 }
 
-.myimage{
-  width: auto;
+.myimage {
+  /* width: auto; */
   margin-left: 12em;
   padding-left: 2em;
+}
+.topnav a.icon {
+
+  visibility: hidden;
+
 }
 
 
 
-@media screen and (max-width: 980px) {x
-  header {
+@media screen and (max-width: 980px) {
+   header {
     padding: 0 0 10px 0;
     justify-content: center;
     text-align: center;
@@ -284,38 +290,127 @@ main {
     justify-content: center;
   }
 
-  .page-section > h2,
-  .page-section > div {
+  .page-section>h2,
+  .page-section>div {
     flex: 0 0 100%;
   }
 
-  .page-section > h2 {
+  .page-section>h2 {
     border-right: none;
     border-bottom: 4px solid var(--primary);
     margin-bottom: 20px;
     padding-bottom: 10px;
     text-align: left;
-    font-size: 7vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .flex-item,
-  .flex-item:first-child {
-    flex-basis: 100%;
+    font-size: 3vw;
   }
 
-  .flex-item:first-child {
-    min-height: 150px;
+  .hero-banner>div>h2 {
+    font-size: 2vw;
+    justify-content: end;
   }
 
-  .hero-banner {
-    justify-content: center;
-    text-align: center;
+  .hero-banner>div>img {
+
+    margin-left: 125%;
+    margin-bottom: 40%;
+  }
+  .myimage img {
+    width: 100%
   }
 
-  .contact address {
-    flex-direction: column;
-    align-items: flex-start;
+  .topnav a.icon {
+
+    visibility: hidden;
+
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+
+    .hero-banner {
+      width: auto;
+      ;
+      text-align: center;
+      font-size: small;
+    }
+
+    .hero-banner>div>h2 {
+      font-size: 4vw;
+    }
+
+    .myimage img {
+      width: 100%
+    }
+
+    .hero-banner>div>img {
+      width: 125%;
+      margin-left: 90%;
+      margin-bottom: 40%;
+    }
+
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .topnav a.icon {
+
+      visibility: visible;
+
+    }
+
+
+
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+      position: relative;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+      display: none;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+
+    /* Style the hamburger menu */
+    .topnav a.icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 25%;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+      background-color: #ddd;
+      
+    }
+
+    /* Style the active link (or home/logo) */
+    .topnav a.icon {
+
+      visibility: visible;
+
+    }
+
   }
 }
